@@ -54,7 +54,7 @@ function Login() {
     }
 
     try {
-      const response = await fetch("https://antoniopokemon.azurewebsites.net/",' mongodb+srv://DSA_ANTONIO_FP:diegoantonio04@antoniodiego04.mj0os.mongodb.net/ ', {
+      const response = await fetch("https://antoniopokemon.azurewebsites.net/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -126,7 +126,7 @@ function Login() {
                 onChange={handleChange}
               >
    
- <option value="">-- Select a Pokémon --</option>
+             <option value="">-- Select a Pokémon --</option>
                 {pokemonList.map((pokemon) => (
                   <option key={pokemon} value={pokemon}>
                     {pokemon}
