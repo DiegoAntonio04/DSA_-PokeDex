@@ -42,6 +42,7 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+   
     // Validation
     if (!formData.name || !formData.age || !formData.email || !formData.favoritePokemon) {
       alert('Please fill out all fields.');
