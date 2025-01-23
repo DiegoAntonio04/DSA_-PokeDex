@@ -136,7 +136,7 @@ function Login() {
             </div>
             <button type="submit" className="submit-button">Submit</button>
           </form>
-          {submitted && <p>Form submitted! Check the console for details.</p>}
+          {submitted && <p>Form submitted!.</p>}
         </div>
       </div>
     </div>
