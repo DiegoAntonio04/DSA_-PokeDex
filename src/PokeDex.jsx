@@ -41,7 +41,7 @@ function Login() {
     });
   };
 
-  const handleSubmit = async (d) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
    
     // Validation
