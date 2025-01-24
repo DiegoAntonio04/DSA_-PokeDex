@@ -54,8 +54,8 @@ function Login() {
     }
 
     try {
-      const response = await fetch("antoniopokemon.azurewebsites.net/submit", {
-        method: "POST",
+      const response = await fetch("https://antoniopokemon.azurewebsites.net/submit", {
+        method: "Post",
         headers: {
           "Content-Type": "application/json",
         },
