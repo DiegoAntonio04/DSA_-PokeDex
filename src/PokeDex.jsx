@@ -11,7 +11,7 @@ function Login() {
   };
 
   const [formData, setFormData] = useState(initialFormData);
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted] = useState(false);
 
   const pokemonList = [
     'Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard',
@@ -54,7 +54,7 @@ function Login() {
     }
 
     try {
-      const response = await fetch("https://antoniopokemon.azurewebsites.net/submit", {
+      const response = await fetch("https://antoniopokemon.azurewebsites.net", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
