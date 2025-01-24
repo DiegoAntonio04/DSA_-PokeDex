@@ -60,7 +60,7 @@ function Login() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(initialFormData),
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
