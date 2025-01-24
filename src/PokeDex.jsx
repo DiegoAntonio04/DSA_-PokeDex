@@ -40,7 +40,7 @@ function Login() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (d) => {
     e.preventDefault();
    
     // Validation
@@ -54,8 +54,8 @@ function Login() {
     }
 
     try {
-      const response = await fetch("https://antoniopokemon.azurewebsites.net/submitFave", {
-        method: POST,
+      const response = await fetch("antoniopokemon.azurewebsites.net/submit", {
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
@@ -68,7 +68,7 @@ function Login() {
         console.log("API Response:", result);
         console.log("Form submission was successfully saved");
 
-        setFormData(initialFormData);
+        setFormData(formData);
       } else {
         alert("Form submission failed. Please try again.");
         console.log("API Response: Error!!", response.statusText);
