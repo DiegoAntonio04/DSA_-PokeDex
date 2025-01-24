@@ -2,6 +2,7 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
+
 function Login() {
   const initialFormData = {
     name: '',
@@ -11,7 +12,7 @@ function Login() {
   };
 
   const [formData, setFormData] = useState(initialFormData);
-  const [submitted] = useState(false);
+  const [submitted,setSubmitted] = useState(false);
 
   const pokemonList = [
     'Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard',
