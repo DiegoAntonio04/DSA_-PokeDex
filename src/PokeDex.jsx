@@ -54,7 +54,7 @@ function Login() {
     }
 
     try {
-      const response = await fetch("antoniopokemon.azurewebsites.net/submitFave","https://nice-desert-040cfc900.4.azurestaticapps.net/api/submit", {
+      const response = await fetch("https://antoniopokemon.azurewebsites.net", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
