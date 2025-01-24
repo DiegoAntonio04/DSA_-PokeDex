@@ -68,7 +68,12 @@ function Login() {
         console.log("API Response:", result);
         console.log("Form submission was successfully saved");
 
-        setFormData(formData);
+        setFormData({
+          name: "",
+          age: "",
+          email: "",
+          favoritePokemon: "Select a Pokémon"
+        });
       } else {
         alert("Form submission failed. Please try again.");
         console.log("API Response: Error!!", response.statusText);
